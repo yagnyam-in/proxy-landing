@@ -1,5 +1,5 @@
 /*!
- * Start Bootstrap - Proxy v5.0.4 (https://www.yagnyam.in)
+ * Start Bootstrap - Proxy v5.0.4 (https://www.pxy.yagnyam.in)
  * Copyright 2013-2019 Chenna Reddy
  * Licensed under MIT (https://github.com/BlackrockDigital/proxy-landing/blob/master/LICENSE)
  */
