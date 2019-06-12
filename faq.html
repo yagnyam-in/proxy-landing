@@ -17,7 +17,8 @@
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900"
+        rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
   <!-- Plugin CSS -->
@@ -30,72 +31,140 @@
 
 <body id="page-top">
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="/#page-top">Proxy</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="https://slides.com/chennareddy/deck/fullscreen" target="_blank">Pitch</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/#download">Download</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/#features">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-
-  <section class="features" id="features">
-    <div class="container">
-      <div class="section-heading text-center">
-        <h2>Frequently Asked Questions</h2>
-        <p class="text-muted">Do you need more details, you can always reach <a href="/#contact">me</a></p>
-        <hr>
-      </div>
-      <div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>&copy; Yagnyam eCommerce LLP 2019. All Rights Reserved.</p>
-      <ul class="list-inline">
-        <li class="list-inline-item">
-          <a href="/privacy.html">Privacy</a>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand js-scroll-trigger" href="/#page-top">Proxy</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+            aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger"
+             href="https://slides.com/chennareddy/deck/fullscreen" target="_blank">Pitch</a>
         </li>
-        <li class="list-inline-item">
-          <a href="/tc.html">Terms</a>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="/#download">Download</a>
         </li>
-        <li class="list-inline-item">
-          <a href="/faq.html">FAQ</a>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="/#features">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="/#contact">Contact</a>
         </li>
       </ul>
     </div>
-  </footer>
+  </div>
+</nav>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<section class="features" id="features">
+  <div class="container">
+    <div class="section-heading text-center">
+      <h2>Frequently Asked Questions</h2>
+      <p class="text-muted">Do you need more details, you can always reach <a
+          href="/#contact">me</a></p>
+      <hr>
+    </div>
+    <div>
+      <p><h3>What is a Proxy?</h3></p>
+      <p>Proxy is a virtual entity which has a Private key and X509 Certificate associated with it.
+        Proxy would digitally sign these messages, which can be easily verified using corresponding
+        publicly available Certificate.
+      </p>
+      <p><h3>What is a Proxy Id?</h3></p>
+      <p>
+        Proxy Id is Unique disposable Identifier to Identify a given Proxy. Its combination of
+      <ul>
+        <li>Unique Id</li>
+        <li>SHA-256 of corresponding Certificate</li>
+      </ul>
+      </p>
+      <p><h3>What are different kind of proxies and their lifetimes?</h3></p>
+      <p>
+        There are two kind of Proxies, they have different lifetimes.
+        <ul>
+        <li><strong>Master Proxy</strong><br/>Is only used to create disposable proxies. When somethings goes wrong, you can use Master Proxy to deactivate all the its children proxies.</li>
+        <li><strong>Regular/Disposable Proxy</strong><br/>Is used in transactions. Its a good practice not to re-use these proxies to prevent tracking.</li>
+        </ul>
+      </p>
+      <p><h3>Which Authentication protocol do you Use?</h3></p>
+      <p>There is no need of any Authentication protocol as all the messages are digitally
+        signed.</p>
+      <p><h3>How is Anonymity guaranteed?</h3></p>
+      <p>
+        As a Proxy doesn't contain any personal information, its impossible to get the owner details.
+        Same time, one can't blindly trust a Proxy Id for what it claims to be.
+        So all these Proxy's authorization over a given underlying entity is always signed by a trusted party.
+      <ul>
+        <li><strong>Banking</strong><br/>In case of Banking, bank would sign authorization over Bank Account for a given Proxy. As long as you trust the Bank, you can trust the Proxy.</li>
+        <li><strong>Identity</strong><br/>Is case of Identity, Identity Provider (e.g. Govt Body) would sign authorization over a Individual for a given Proxy. Same as in Banking as long as you trust Govt Body, you can trust the Proxy</li>
+      </ul>
+      </p>
+      <p><h3>Is there a Audit that can be verified?</h3></p>
+      <p>Since all the messages are digitally signed, its very easy to verify. To make the eco system more secure, always the request messages are included in responses.</p>
+      <p><h3>How sensitive information like email address/phone numbers etc. is Protected?</h3></p>
+      <p>When a given message is addressed to single party, sensitive information can be encrypted using their public key. Only the private key holder can decrypt it</p>
+      <p>When a message is open addressed, its not always required to include the sensitive data in original format, instead a Hash of the message is sufficient.
+      If someone has to prove that they know the sensitive data, they can include sensitive data encrypted using the destination Proxies public key.</p>
+      <p><h3>What are the messages exchanged, how are they special?</h3></p>
+      <p>Messages in Proxy eco system aren't simple Plain Data Objects.
+        They contain little business logic based on message type which makes it different from regular plain messages.
+        Every Message dictates <ul><li>Who can Sign the Message</li><li>Is the Message Valid with the information present in Message.</li></ul>
+      E.g. Only a Bank can sign <i>Account Balance Response</i> message.
+      </p>
+      <p><h3>Which Cryptographic algorithms are used?</h3></p>
+      <p>
+      <ul>
+        <li><strong>Hashing</strong><br/>SHA 256 is used for Hashing.</li>
+        <li><strong>Digital Signatures</strong><br/>SHA256 with RSA Encryption is used for Signing messages.</li>
+        <li><strong>Encryption</strong><br/>RSA/NONE/OAEPwithSHA-256andMGF1Padding is used for Encryption. There are plans to use Symmetric key Encryption for longer messages because of efficiency reasons.</li>
+      </ul>
+      </p>
+      <p><h3>Where can I find the Source Code?</h3></p>
+      <p>
+      All the customer facing modules are Open Sourced.
+      <ul>
+      <li><a href="https://github.com/yagnyam-in/proxy-parent">Java Core &amp; Messages</a></li>
+        <li><a href="https://github.com/yagnyam-in/proxy-core-dart">Dart Core</a></li>
+        <li><a href="https://github.com/yagnyam-in/proxy-messages-dart">Dart Messages</a></li>
+        <li><a href="https://github.com/yagnyam-in/proxy-flutter">Proxy App using Flutter</a></li>
+      </ul>
+      </p>
+    </div>
+  </div>
+</section>
 
-  <!-- Custom scripts for this template -->
-  <script src="js/new-age.min.js"></script>
+<footer>
+  <div class="container">
+    <p>&copy; Yagnyam eCommerce LLP 2019. All Rights Reserved.</p>
+    <ul class="list-inline">
+      <li class="list-inline-item">
+        <a href="/privacy.html">Privacy</a>
+      </li>
+      <li class="list-inline-item">
+        <a href="/tc.html">Terms</a>
+      </li>
+      <li class="list-inline-item">
+        <a href="/faq.html">FAQ</a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="js/new-age.min.js"></script>
 
 </body>
 
