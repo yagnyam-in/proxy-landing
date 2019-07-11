@@ -1,10 +1,12 @@
-# Proxy Landing Page
+# ProMo App Landing Page
 
-App for anonymizing Identity and Payments
+App for Anonymizing Identity and Payments
 
 
-[![Download Android](https://img.shields.io/badge/download-android-blue.svg)](https://play.google.com/store/apps/details?id=in.yagnyam.proxy)
-[![Web Site](https://img.shields.io/badge/web-site-blue.svg)](https://www.pxy.yagnyam.in)
+[![Web Site](https://img.shields.io/badge/web-site-red.svg)](https://www.pxy.yagnyam.in)
+[![Get it on Google Play](https://img.shields.io/badge/android-app-green.svg)](https://play.google.com/store/apps/details?id=in.yagnyam.proxy)
+[![Download on the App Store](https://img.shields.io/badge/ios-app-blue.svg)](https://play.google.com/store/apps/details?id=in.yagnyam.proxy)
+
 
 
 ## Development
