@@ -5,7 +5,7 @@ App for Anonymizing Identity and Payments
 
 [![Web Site](https://img.shields.io/badge/web-site-red.svg)](https://www.pxy.yagnyam.in)
 [![Get it on Google Play](https://img.shields.io/badge/android-app-green.svg)](https://play.google.com/store/apps/details?id=in.yagnyam.proxy)
-[![Download on the App Store](https://img.shields.io/badge/ios-app-blue.svg)](https://play.google.com/store/apps/details?id=in.yagnyam.proxy)
+[![Download on the App Store](https://img.shields.io/badge/ios-app-blue.svg)](https://apps.apple.com/us/app/programmable-money/id1471332801)
 
 
 
